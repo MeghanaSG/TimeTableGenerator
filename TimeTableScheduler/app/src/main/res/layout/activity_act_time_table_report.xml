@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_act_time_table_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sois.timetablescheduler.actTimeTableReport">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/rootTimeTable"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9CCC65"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtvMainHead"
+                android:text="Time Table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:gravity="center"
+                android:textSize="42dp"/>
+            />
+
+            <!--LinearLayout
+                android:id="@+id/rootTimeTableContent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9CCC65"
+                android:gravity="center"
+                android:orientation="horizontal"-->
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tbl_layout_main_id"
+                android:orientation="vertical" >
+            </TableLayout>
+            <!--TableLayout
+                android:layout_height="wrap_content"
+                android:id="@+id/tbl_layout_main_id"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="0dp">
+                <TableRow android:layout_marginLeft="0dp">
+                    <TextView
+                        android:id="@+id/h1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="AAA"
+                        android:textColor="#212121"
+                        android:textSize="22dp" />
+
+                        <TextView
+                            android:id="@+id/h2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="BBB"
+                            android:textColor="#212121"
+                            android:textSize="22dp" />
+
+                </TableRow>
+
+                <TableRow android:layout_marginLeft="0dp">
+                    <TextView
+                    android:id="@+id/txtvYouthMobile_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textColor="#212121"
+                    android:textSize="22dp" />
+                </TableRow>
+            </TableLayout-->
+            <!--/LinearLayout-->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="117dp"
+        android:id="@+id/button3"
+        android:onClick="onc"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="121dp"
+        android:layout_marginEnd="121dp" />
+
+
+</RelativeLayout>
